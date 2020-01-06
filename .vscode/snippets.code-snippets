@@ -15,22 +15,15 @@
   // 	],
   // 	"description": "Log output to console"
   // }
-  "Simple Table": {
+    "Entrada de Blog": {
     "scope": "html,html5",
-    "prefix": "table+",
+    "prefix": "BlogEntry",
     "body": [
-      "<table>",
-      " <thead>",
-      " <th>$1</th>",
-      " </thead>",
-      "",
-      " <tbody>",
-      " <td>$2</td>",
-      " </tbody>",
-      "",
-      " <tfoot>",
-      "<td>$3</td>",
-      "</tfoot>"
+      "<div class='divblogentry'>",
+      "  <h1 class='entryheading'>${1:Cabecera}</h1>",
+      "  <p class='entryparagraph'>${2:Contenido de la entrada}</p>",
+      "  <img src='$3' alt='${4:Blog Entry Descriptive Image}'>",
+      "</div>"
     ]
   }
 }
